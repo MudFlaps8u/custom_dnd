@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Custom: Doctor</name>
+        <description>Custom: Doctor</description>
+        <author url="">Wizards of the Coast</author>
+        <update version="0.0.3">
+            <file name="background-doctor.xml" url="" />
+        </update>
+    </info>
+
+	<element name="Doctor" type="Background" source="Custom: Doctor" id="ID_WOTC_PSA_BACKGROUND_DOCTOR">
+		<description>
+			<p>The world's doctors come in many shapes and sizes. There are apothecaries, shamans, field medics; a lot more variety exists beyond the standard cleric healer of faith. These doctors are better known for their additional social aspect of communicating with patients as well as often treating their ailments through an accessible and nonmagical procedure. Doctors also perform invasive procedures to save lives, like conducting surgeries or helping induce birth. For the most part, doctors are expected to be paragons of good. They are beholden to a code that ensures they do no harm and try their very best to help patients. As such, it should come as no surprise that they often encounter the worst in humanity. Moral issues tail them around as purveyors of a limited good. Temptations can lead a doctor astray and easily make them into a monster.
+			<p class="indent">When creating your doctor character, consider what sort of doctor they are. Traveling doctors are not unheard of and welcomed often as a benign sight. Of course, there lie rotten apples with every orchard, and your character could very well be a false doctor who extorts money from their patients. Or are you perhaps a grizzled veteran who has seen and treated many, vowing only to go further? Do you discriminate between patients, choosing only to treat certain races or groups? Do you have more knowledge treating individuals of these specific races over other races? What is your special doctor touch? There are the diné, medicine men who specialize in warding off evil spirits, as well as the alchemists of the east who craft potions of alleged immortality.
+			<p class="indent">What drives your doctor? Money? Fame? Doctors are generally recognized one way or another within communities where they practice as figures of authority. Have they maybe experienced crippling illness themselves, spurring them into this field? Due to the strain of the work, doctors may disassociate themselves from patients or choose to treat everyone professionally. Consider how your character deals with all the death they may have seen, as well as any miracles of medicine they may have witnessed. They, above all others, know the fragility of life and how easily it can be forgotten. In a world where everyone can not pay for resurrection spells or even minor curative magic, a doctor can be the final arbiter between who lives and who dies.
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Investigation, Medicine</li>
+				<li><strong>Tool Proficiencies:</strong>Herbalism kit</li>
+				<li><strong>Equipment:</strong>A bedroll, blanket, 2-man tent, doctoral notes on your area of specialization, doctor's certification, a set of common clothes, an herbalism kit, and a belt pouch containing 5 gp.</li>
+			</ul>
+			<div element="ID_BACKGROUND_DOCTOR_FEATURE_WITHOUT_BORDERS" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Doctors come from many walks of life. Some may be well educated while others may have learned how to be a doctor through the passing down of knowledge from one generation to another, while others may have had to start from scratch and have had to learn as they doctored. Regardless, many doctors are troubled by harrowing events they bore witness to. Some are shockingly pragmatic, with an "it may not be pretty, but you'll live" approach to problems. Many are seemingly tireless, hard-working individuals. Some can be inspiring souls, with a deep appreciation, not only for life, but for the person who is alive as well.</p>
+		</description>
+		<setters>
+			<set name="short">Investigation, Medicine, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<select type="Proficiency" name="Herbalism Kit" supports=""ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<select type="Language" name="Language (Acolyte)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_BACKGROUND_DOCTOR_FEATURE_WITHOUT_BORDERS" requirements="!ID_WOCT_PSA_BACKGROUND_FEATURE_DISSENTER_SHELTER_OF_DISSENTERS"/>
+			<select type="Background Doctor" name="Variant Doctor" supports="Background Doctor" optional="true" />
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">All I think about is saving lives, or lives that have been lost.</item>
+				<item id="2">I practice in the name of my religion, nation, or clan.</item>
+				<item id="3">I am cold and calculating in my every word and action, even when furious or frightened.</item>
+				<item id="4">When the bodies hit the floor, my hands go into automatic.</item>
+				<item id="5">I consider magical healers and healing either to be cheating and unaccountable, or an integral future counterpart of a greater medical art.</item>
+				<item id="6">I am waging a personal war on death itself.</item>
+				<item id="7">I am entranced and inspired by the brilliance and glory of the living body.</item>
+				<item id="8">I am actively involved in the medical society and engage in theoretical discourse and debate.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Solidarity. The thing that matters most of all is that we’re there for each other. (Lawful)</item>
+				<item id="2">Knowledge. The world is a puzzle—a mystery waiting to be solved. (Neutral)</item>
+				<item id="3">Strength. All that matters to me is my own perfection. Let everyone else seek that perfection in their own way. (Any)</item>
+				<item id="4">Ambition. I’m going to prove that I deserve only the best—of everything. (Evil)</item>
+				<item id="5">Zeal. Anything worth doing is worth throwing my whole self into. (Any)</item>
+				<item id="6">Redemption. I will train all the harder to make up for the doubt I entertained when I was younger. (Any)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I owe everything to my home village/clan, for pooling their resources to have me educated.</item>
+				<item id="2">I was pushed, or encouraged, into the field by my parents, one of whom may have been a doctor.</item>
+				<item id="3">My professor is the most important person in the world to me.</item>
+				<item id="4">My patients are my everything- losing one of them is like dying, but it never ends.</item>
+				<item id="5">I took up the profession because someone close to me died of something treatable.</item>
+				<item id="6">I started my training alone from texts I obtained by my own means.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I took the vow to be a healer without realizing its full implications.</item>
+				<item id="2">No one can know that I have broken my promises before...</item>
+				<item id="3">I feel contempt for many of my patients.</item>
+				<item id="4">I think I am better than other doctors, and other people in general.</item>
+				<item id="5">Sometimes I go too far in my search for knowledge.</item>
+				<item id="6">I am frightened/sickened by human suffering.</item>
+			</select>
+		</rules>       
+	</element>
+	<element name="Feature: Without Borders" type="Background Feature" source="Custom" id="ID_BACKGROUND_DOCTOR_FEATURE_WITHOUT_BORDERS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>However you may have earned your prestige or title as a doctor, you are now known to be a person who has sworn to do their very best to save lives. Your certification as a doctor makes others see you as a nonpartisan who often does what is right, no matter the case. In instances where there may be fractious conflict between neighbors or borders, you, as a doctor, may be the ideal figure to ask to mediate. If you require crossing into dangerous territory, like one of war or feud, authorities will be more lenient on your plea due to your profession providing ample reason in their eyes. This is not to say you will always get a free pass, as the respect owed to doctors is not always a given in society. Additionally, if your plea contradicts the role of a doctor, you may arouse more suspicion than usual.</p>
+		</description>
+		<sheet alt="Without Borders" />
+	</element>
+</elements>
