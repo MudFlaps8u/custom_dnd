@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="1.0">
+      <file name="custom_dnd.index" url="https://raw.githubusercontent.com/MudFlaps8u/custom_dnd/main/background-doctor.xml" />
+    </update>
+  </info>
+  <files>
+    <file name="background-doctor.xml" url="https://raw.githubusercontent.com/MudFlaps8u/custom_dnd/main/background-doctor.xml" />
+  </files>
+</index>
