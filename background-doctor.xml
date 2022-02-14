@@ -28,7 +28,7 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
-			<select type="Proficiency" name="Herbalism Kit" supports=""ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<select type="Proficiency" name="Herbalism Kit" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
 			<select type="Language" name="Language (Acolyte)" number="2" supports="Standard||Exotic" />
 			<grant type="Background Feature" id="ID_BACKGROUND_DOCTOR_FEATURE_WITHOUT_BORDERS" requirements="!ID_WOCT_PSA_BACKGROUND_FEATURE_DISSENTER_SHELTER_OF_DISSENTERS"/>
 			<select type="Background Doctor" name="Variant Doctor" supports="Background Doctor" optional="true" />
